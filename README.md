@@ -1,9 +1,9 @@
-`slicing-copy.lua` is a Lua script forked from [Kagami/mpv_slicing](https://github.com/Kagami/mpv_slicing).
-The script is for mpv to cut fragments of the video.
+`slicing-copy-copy.lua` is a Lua script which is forked from [snylonue/mpv_slicing_copy](https://github.com/snylonue/mpv_slicing_copy) which is a lua script forked from [Kagami/mpv_slicing](https://github.com/Kagami/mpv_slicing).
+The script is for mpv to cut fragments of the video and reencodes copies everything including fonts and also maybe reencodes them idk
 
 #### Usage
 
-Make sure you have FFmpeg installed. Put `slicing_copy.lua` to `~/.config/mpv/scripts/` or `~/.mpv/scripts/` directory to autoload the script or load it manually with `--script=<path>`.
+Make sure you have FFmpeg installed. Put `slicing_copy_copy.lua` to `~/.config/mpv/scripts/` or `~/.mpv/scripts/` directory to autoload the script or load it manually with `--script=<path>`.
 
 Press `c` first time to mark the start of the fragment. Press it again to mark the end of the fragment and write it to the disk. Press `C` to clear the fragment. Press `a` to toggle audio capturing (default on).
 
@@ -15,18 +15,17 @@ You could change key bindings and all parameters of the output video by editing 
 
 If `--merge-files` is passed to mpv, the script won't work.
 
-The script will pass `-referer` and `-user_agent` to ffmpeg to support some online videos (since commit [`f9248e4`](https://github.com/snylonue/mpv_slicing_copy/commit/f9248e452d4f50e13152169c7417cb6003e6925d)), but filenames could be unfriendly.
-
-Output videos will be placed in `cutfragments` in mpv configuration directory by default instead of the home directory since commit [`7b3ef36`](https://github.com/snylonue/mpv_slicing_copy/commit/7b3ef36fbe854f238e296a8b16af25bc281142c9).  
-Before [`f4a46ab`](https://github.com/snylonue/mpv_slicing_copy/commit/f4a46abafacc0e0d110c4c04ab8d2710eb6afbc4), neither the script nor ffmpeg will check or create the directory. After it, the directory would be checked (though not created) and a warning message would be printed in console if something went wrong. You could always change the directory by editing option `target_dir` in `script-opts/slicing_copy.conf` or [source code](slicing_copy.lua).
+something lame was here idc
 
 #### License
 
-mpv_slicing_copy - Cut video fragments with mpv
+mpv_slicing_copy_copy - Cut video fragments with mpv
 
 Written in 2015 by Kagami Hiiragi <kagami@genshiken.org>
 
 Modified in 2019 by Snylonue <snylonue@gmail.com>
+
+dm4uz3 modified slightly to their liking hehehe :3
 
 To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
 
